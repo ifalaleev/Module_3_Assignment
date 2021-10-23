@@ -1,0 +1,164 @@
+/* ------------------------- */
+/* Variables */
+/* ------------------------- */
+
+:root {
+	--main-accent: #fc575e;
+	--light-accent-color: #420264;
+	--dark-accent-color: #896fbc;
+	--main-grey: #1b1734;
+	--nav-bg: #4871e8;
+}
+/* ------------------------- */
+/* Global */
+/* ------------------------- */
+body {
+	font-size: 16px;
+	color: #fff;
+	background-color: var(--main-grey);
+	font-family: "Oxygen", sans-serif;
+}
+
+/* ------------------------- */
+/* Header */
+/* ------------------------- */
+#header-nav {
+	background-color: #5c038c;
+	border-radius: 0;
+	border-top: 5px solid var(--light-accent-color);
+	border-bottom: 5px solid var(--light-accent-color);
+	height: auto;
+}
+
+/* ------------------------- */
+/* Restaurant Name */
+/* ------------------------- */
+.navbar-brand {
+	height: auto;
+}
+
+.navbar-brand h1 {
+	font-family: "Lora", serif;
+	color: var(--main-accent);
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 30px;
+	line-height: 0.75;
+}
+.navbar-brand a:hover,
+.navbar-brand a:focus {
+	text-decoration: none;
+}
+
+/* ------------------------- */
+/* Navbar List */
+/* ------------------------- */
+#nav-list {
+	margin-top: 10px;
+	background-color: var(--main-grey);
+}
+#nav-list a {
+	background-color: var(--nav-bg);
+	font-weight: bold;
+	color: var(--main-accent);
+	text-align: center;
+}
+#nav-list a:hover {
+	background: #e7e7e7;
+}
+#nav-list a span {
+	font-size: 1.8em;
+}
+
+/* ------------------------- */
+/* Navbar Button */
+/* ------------------------- */
+.navbar-header button.navbar-toggle,
+.navbar-header .icon-bar {
+	border: 1px solid var(--main-accent);
+}
+.navbar-header button.navbar-toggle {
+	margin: 15px;
+}
+
+/* ------------------------- */
+/* Home Page */
+/* ------------------------- */
+
+h3 {
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+section {
+	border: 2px solid var(--light-accent-color);
+	background-color: var(--dark-accent-color);
+	width: 100%;
+	margin: 15px auto;
+}
+
+/* ------------------------- */
+/* Large Devices Only */
+/* ------------------------- */
+@media (min-width: 1200px) {
+}
+
+/* ------------------------- */
+/* Medium Devices Only */
+/* ------------------------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* ------------------------- */
+/* Small Devices Only */
+/* ------------------------- */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* ------------------------- */
+/* Extra Small Devices Only */
+/* ------------------------- */
+@media (max-width: 767px) {
+	/* Header */
+
+	section:nth-child(1) {
+		height: 700px;
+	}
+
+	.navbar-brand h1 {
+		padding-top: 10px;
+		margin-bottom: 20px;
+		font-size: 5vw; /*1vw = 1% of viewport width */
+		width: 100%;
+		text-align: center;
+	}
+
+	/* Collapsed Nav Menu Text */
+	#collapsable-nav a {
+		font-size: 1.2em;
+	}
+
+	/* Collapsed Nav Menu Glyph */
+	#collapsable-nav a span {
+		font-size: 1em;
+		margin-right: 5px;
+	}
+}
+
+/* ------------------------- */
+/* Super Extra Small Devices Only */
+/* ------------------------- */
+@media (max-width: 479px) {
+	/* Header */
+	.navbar-brand h1 {
+		padding-top: 5px;
+		font-size: 6vw;
+	}
+	/* End Header */
+}
